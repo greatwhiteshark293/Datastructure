@@ -16,7 +16,7 @@ https://leetcode.com/problems/binary-tree-inorder-traversal/
 class Solution {
 public:
 //Solution 1: Recursive
-//Space :O(1)
+//Space :O(d) depth of tree
 //Time: O(n)
     void inorder(vector<int> &result,TreeNode* root){
         if(!root) return;

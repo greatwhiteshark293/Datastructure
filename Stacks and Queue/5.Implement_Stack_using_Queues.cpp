@@ -1,13 +1,5 @@
 225. Implement Stack using Queues
-Easy
 
-3511
-
-915
-
-Add to List
-
-Share
 Implement a last-in-first-out (LIFO) stack using only two queues. The implemented stack should support all the functions of a normal stack (push, top, pop, and empty).
 
 Implement the MyStack class:
@@ -92,6 +84,43 @@ public:
     
     bool empty() {
         return (q1->size()==0 && q2->size()==0);
+    }
+};
+
+
+//Solution using one queue
+class MyStack {
+    queue<int> q;
+public:
+    MyStack() {
+        
+    }
+    
+    void push(int x) {
+        int rotate = q.size();
+        q.push(x);
+        for(int i=0;i<rotate;i++){
+            int temp = q.front();
+            q.pop();
+            q.push(temp);
+        }
+    }
+    
+    int pop() {
+        int val =-1;
+        if(!q.empty()){
+            val = q.front();
+            q.pop();
+        }
+        return val;
+    }
+    
+    int top() {
+        return !q.empty() ? q.front() : -1;
+    }
+    
+    bool empty() {
+        return q.empty();
     }
 };
 

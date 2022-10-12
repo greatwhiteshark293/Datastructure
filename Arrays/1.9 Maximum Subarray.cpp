@@ -1,5 +1,5 @@
 // 53. Maximum Subarray
-// Have to do Divide and conquer method
+// Have to do Divide and conquer method -> https://leetcode.com/problems/maximum-subarray/discuss/20452/C%2B%2B-DP-and-Divide-and-Conquer
 // Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
 // A subarray is a contiguous part of an array.
 

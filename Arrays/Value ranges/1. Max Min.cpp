@@ -1,4 +1,4 @@
-// Max Min
+// Max Min (Easy)
 // https://www.interviewbit.com/problems/max-min-05542f2f-69aa-4253-9cc7-84eb7bf739c4/
 
 // Problem Description
@@ -52,6 +52,8 @@
 
 //  Maximum Element is 4 and Minimum element is 1. (4 + 1) = 5.
    
+//O(n) Time Complexity
+//O(1) Space
    int Solution::solve(vector<int> &A) {
     if(A.size() == 1) return A[0];
     int maxElement =INT_MIN;
